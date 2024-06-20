@@ -9,13 +9,13 @@ pipeline {
 
     stage('Test') {
       parallel {
-        stage('Test1') {
+        stage('Api Test') {
           steps {
             echo 'echo \'Testing\''
           }
         }
 
-        stage('Test') {
+        stage('Unit Test') {
           steps {
             echo 'Api Testing'
           }
